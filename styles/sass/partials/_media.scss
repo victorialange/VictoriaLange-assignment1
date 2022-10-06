@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .aboutFlex {
+        flex-direction: column;
+        align-items: center;
+
+        .imgContainer, .textContainer {
+            width: 95%;
+        }
+    }
+}
