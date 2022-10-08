@@ -27,7 +27,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header id="home">
         <!-- WRAPPER -->
         <div class="wrapper">
         <!-- HEADER NAVBAR -->
@@ -171,15 +171,17 @@
             </nav>
             <!-- END FOOTER NAVBAR -->
             <!-- SUBSCRIBE FORM -->
-            <form action="">
+            <form action="" method="GET">
                 <h2>Stay updated</h2>
                 <label for="subscribe">Subscribe to our newsletter to stay updated.</label>
-                <input type="email" id="subscribe">
-                <button>subscribe</button>
+                <div class="formFlex">
+                    <input type="email" id="subscribe" placeholder="Your best email">
+                    <button>subscribe</button>
+                </div>
             </form>
             <!-- END FORM -->
             <!-- CONTACT INFO div -->
-            <div class="contact-info">
+            <div class="contact-info" id="contact">
                 <h3>Contact</h3>
                 <p>info@email.com | 123 - 456 - 7890</p>
                 <p>123 some road, Toronto, ON</p>
@@ -189,7 +191,7 @@
         </div>
         <!-- END WRAPPER -->
         <div class="copyright">
-            <p>Copyright ©️ 2019 HackerYou</p>
+            <small>Copyright ©️ 2019 HackerYou</small>
         </div>
     </footer>
 </body>

@@ -19,7 +19,7 @@ html {
     background: $mainColor;
 }
 
-p, .header-nav, .footer-nav {
+p, .header-nav, .footer-nav, small {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -56,7 +56,16 @@ button {
     text-align: center;
     color: $textColor;
     font-family: 'Petit Formal Script', cursive;
-    padding: 10px;
+    padding: 7.5px 17px;
+    border: 5px solid $thirdColor;
+    transition: all 0.2s ease-in;
+}
+
+button:hover, button:focus, button:active {
+    cursor: pointer;
+    text-shadow: 0 0 2px $textColor;
+    font-size: 1.5rem;
+    box-shadow: 0 0 15px $thirdColor;
 }
 
 .footer-nav {
@@ -69,7 +78,6 @@ button {
 
 button, .copyright {
     background: $thirdColor;
-    border-color: $thirdColor;
     text-align: center;
 }
 
@@ -176,4 +184,58 @@ button, .copyright {
             width: 100%;
         }
     }
+}
+
+.footerFlex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+form {
+    text-align: center;
+    h2 {
+        padding-bottom: 45px;
+    }
+    label {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        display: block;
+        padding-bottom: 15px;
+    }
+    input {
+        width: 450px;
+        height: 52.5px;
+        border-radius: 0px;
+    }
+}
+
+.formFlex {
+    display: flex;
+}
+
+.contact-info {
+    text-align: right;
+    padding-top: 40px;
+    h3 {
+        padding-bottom: 15px;
+    }
+}
+
+.footer-nav {
+    padding-top: 80px;
+    width: 20%;
+}
+
+.copyright {
+    padding: 10px;
+    letter-spacing: 0.2px;
+    line-height: 29px;
+}
+
+/* link shimmer */
+a:hover, a:focus, a:active {
+    text-shadow: 0 0 2px $textColor;
 }
