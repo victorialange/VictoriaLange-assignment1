@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="2019 HackerYou">
     <title>Galass Handbags</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- links to Google Fonts -->
@@ -14,7 +15,15 @@
     <!-- Roboto font 300 and 400 font-weight -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- ICON links -->
+    <!-- image icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- calendar icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- handshake icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <!-- HEADER -->
@@ -23,7 +32,7 @@
         <div class="wrapper">
         <!-- HEADER NAVBAR -->
             <nav class="header-nav">
-                <ul>
+                <ul class="header-nav-flex">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
@@ -31,8 +40,14 @@
                 </ul>
             </nav>
             <!-- END HEADER NAVBAR -->
-            <h1>Galass Handbags</h1>
-            <img src="./assets/group-bags.png" alt="">
+            <!-- FLEX container for header img and h1 -->
+            <div class="headerFlex">
+                <h1>Galass Handbags</h1>
+                <div class="imgContainer1">
+                    <img src="./assets/group-bags.png" alt="">
+                </div>
+            </div>
+            <!-- END FLEX container for header img and h1 -->
         </div>
         <!-- END WRAPPER -->
     </header>
@@ -43,14 +58,14 @@
             <!-- WRAPPER AND FLEX container for ABOUT section -->
             <div class="wrapper flexAbout">
                 <!-- IMG CONTAINER 1 -->
-                <div class="imgContainer1">
-                    <img src="./assets/square-photo.jpg" alt="">
+                <div class="imgContainer2">
+                    <img src="./assets/square-photo_cropped.jpg" alt="">
                 </div>
                 <!-- END IMG CONTAINER 1 -->
                 <!-- TEXT CONTAINER 1 -->
                 <div class="textContainer1">
                     <h2>Hand crafted</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime libero praesentium animi quas nisi nihil quasi iure dignissimos delectus! Modi atque architecto laborum aliquam nulla repudiandae, corrupti, labore quibusdam dolore consequatur magnam necessitatibus! Possimus magnam quo eos eius illo. Eos minima, laborum sunt consectetur neque sequi corrupti, harum enim qui fuga adipisci dicta facere sapiente obcaecati repellat voluptatum aliquid. Corporis deleniti est aliquam voluptatum neque, voluptas, itaque nemo reprehenderit tempora nobis quia inventore molestiae, atque quos. Beatae earum consequuntur odit similique quo fuga soluta optio libero repudiandae at porro quibusdam odio asperiores nulla minima quae ab nemo modi qui amet, sapiente, in nobis. Perferendis, optio.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus cum dolore ad sapiente saepe ducimus, eius non odio hic omnis provident dicta sed similique autem id eaque nesciunt fuga ipsum aliquam est, itaque nobis. Atque ex vitae voluptatum deleniti, nobis cupiditate accusantium fugit quas accusamus excepturi temporibus quam corporis sed ducimus nulla nemo? Fuga modi magni itaque dignissimos aspernatur quasi quibusdam? Maxime, dolore? Nulla tempora deserunt neque?</p>
                     <button>read more</button>
                 </div>
                 <!-- END TEXT CONTAINER 1 -->
@@ -78,40 +93,65 @@
         <section class="nav2">
             <!-- WRAPPER -->
             <div class="wrapper">
-                <ul>
-                    <li><a href="#catalogue">catalogue</a></li>
-                    <li><a href="#events">events</a></li>
-                    <li><a href="#collaborations">collaborations</a></li>
-                </ul>
+                <nav class="navbar2">
+                    <ul class="nav2Flex">
+                        <li>
+                            <i style="font-size:45px" class="fa">&#xf03e;</i>
+                            <a href="#catalogue"><h3>catalogue</h3></a>
+                        </li>
+                        <li>
+                            <i style="font-size:45px" class="fa">&#xf073;</i>
+                            <a href="#events"><h3>events</h3></a>
+                        </li>
+                        <li>
+                            <i style="font-size:45px" class="fa">&#xf2b5;</i>
+                            <a href="#collaborations"><h3>collaborations</h3></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <!-- END WRAPPER -->
         </section>
         <!-- END SECOND NAV section -->
         <!-- BLOG section -->
         <section class="blog" id="blog">
-            <!-- FLEX CONTAINER for BLOG section -->
-            <ul class="blogFlex">
-                <li>
-                    <!-- WRAPPER and TEXT CONTAINER 2 -->
-                    <div class="wrapper textContainer2"> 
+            <!-- FLEX CONTAINER for BLOG1 -->
+            <div class="blogFlex1">
+                <!-- WRAPPER for TEXT CONTAINER 2 -->
+                <div class="wrapper">
+                    <!-- TEXT CONTAINER2 -->
+                    <div class="textContainer2">
                         <h2>Fall Trends</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum, laborum deleniti quam corrupti voluptatem illo debitis suscipit illum consequuntur ipsum nisi. Totam molestiae cumque autem sapiente fuga placeat, repudiandae eius possimus odio! Non, unde laborum.</p>
                         <button>read more</button>
                     </div>
-                    <!-- END WRAPPER AND TEXT CONTAINER 2 -->
-                </li>
-                <li><img src="./assets/right-photo.jpg" alt=""></li>
-                <li><img src="./assets/left-photo.jpg" alt=""></li>
-                <li>
-                    <!-- WRAPPER AND TEXT CONTAINER 3 -->
-                    <div class="wrapper textContainer3"> 
+                    <!-- END TEXT CONTAINER2 -->
+                </div>
+                <!-- END WRAPPER for TEXT CONTAINER 2 -->
+                <!-- IMG CONTAINER right photo -->
+                <div class="blogFlex1 imgContainerR">
+                    <img src="./assets/right-photo.jpg" alt="">
+                </div>
+            </div>
+            <!-- END FLEX CONTAINER BLOG1 -->
+            <!-- FLEX CONTAINER BLOG2 -->
+            <div class="blogFlex2">
+                <div class="imgContainerL">
+                    <img src="./assets/left-photo.jpg" alt="">
+                </div>
+                <!-- WRAPPER AND TEXT CONTAINER 3 -->
+                <div class="wrapper">
+                    <!-- TEXT CONTAINER3 -->
+                    <div class="textContainer3">
                         <h2>Vegan Leather</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum, laborum deleniti quam corrupti voluptatem illo debitis suscipit illum consequuntur ipsum nisi. Totam molestiae cumque autem sapiente fuga placeat, repudiandae eius possimus odio! Non, unde laborum.</p>
                         <button>read more</button>
                     </div>
-                </li>
-            </ul>
-            <!-- END FLEX CONTAINER BLOG section -->
+                    <!-- END TEXT CONTAINER3 -->
+                </div>
+                <!-- END WRAPPER -->
+            </div>
+            <!-- END FLEX CONTAINER BLOG2 -->
         </section>
         <!-- END BLOG section -->
     </main>
@@ -122,7 +162,7 @@
         <div class="wrapper footerFlex">
             <!-- FOOTER NAVBAR -->
             <nav class="footer-nav">
-                <ul>
+                <ul class="footer-nav-flex">
                     <li><a href="#home">home</a></li>
                     <li><a href="#blog">blog</a></li>
                     <li><a href="#gallery">gallery</a></li>
@@ -138,12 +178,17 @@
                 <button>subscribe</button>
             </form>
             <!-- END FORM -->
+            <!-- CONTACT INFO div -->
             <div class="contact-info">
                 <h3>Contact</h3>
                 <p>info@email.com | 123 - 456 - 7890</p>
                 <p>123 some road, Toronto, ON</p>
                 <p>A5A 5A5, Canada</p>
             </div>
+            <!-- END CONTACT INFO -->
+        </div>
+        <!-- END WRAPPER -->
+        <div class="copyright">
             <p>Copyright ©️ 2019 HackerYou</p>
         </div>
     </footer>

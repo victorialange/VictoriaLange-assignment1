@@ -23,8 +23,157 @@ p, .header-nav, .footer-nav {
     font-family: 'Roboto', sans-serif;
 }
 
-p {
+p, .header-nav {
     font-weight: 300;
     font-size: 1rem;
+    line-height: 29px;
 }
 
+p {
+    letter-spacing: 0.2px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 94.3px;
+    text-align: right;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.7rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+button {
+    font-size: 1.25rem;
+    line-height: 29px;
+    text-align: center;
+    color: $textColor;
+    font-family: 'Petit Formal Script', cursive;
+    padding: 10px;
+}
+
+.footer-nav {
+    line-height: 29px;
+}
+
+.about, .nav2, footer {
+    background: $secondColor;
+}
+
+button, .copyright {
+    background: $thirdColor;
+    border-color: $thirdColor;
+    text-align: center;
+}
+
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    h1 {
+        width: 50%;
+        padding-top: 175px;
+        padding-right: 50px; 
+    }
+}
+
+.header-nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    a {
+        display: inline-block;
+        padding-top: 15px;
+        padding-right: 15px;
+        margin-right: 20px;
+    }
+}
+
+.imgContainer1 {
+    width: 50%;
+    margin-bottom: 50px;
+    padding-left: 60px;
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+.flexAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 0 100px;
+}
+
+.textContainer1 {
+    width: 100%;
+    margin-left: 50px;
+    h2 {
+        padding-bottom: 20px;
+    }
+    p {
+        padding-bottom: 20px;
+    }
+}
+
+.imgContainer2 {
+    width: 35%;
+    padding-top: 10px;
+}
+
+.gallery {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    h2 {
+        text-align: center;
+        padding-bottom: 80px;
+    }
+}
+
+.galleryFlex {
+    display: flex;
+    li {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: calc((100% / 3) - 40px);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.nav2 {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.nav2Flex {
+    display: flex;
+    justify-content: space-evenly;
+    i {
+        display: block;
+        text-align: center;
+    }
+}
+
+.blog {
+    padding: 50px;
+}
+
+.blogFlex1 {
+    display: flex;
+    .textContainer2, .imgContainerR {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+}
