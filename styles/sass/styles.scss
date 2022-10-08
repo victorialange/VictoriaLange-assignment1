@@ -1,9 +1,30 @@
 @use 'partials/setup';
 @use 'partials/media';
+@use 'partials/stripping';
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /* variables for background colours and text colour */
 $mainColor: #815600;
 $secondColor: #500801;
 $thirdColor: #1D0303;
 $textColor: #FFFFFF;
+
+/* General styles */
+html {
+    font-size: 125%;
+    color: $textColor;
+    font-weight: 400;
+    font-family: 'Petit Formal Script', cursive;
+    background: $mainColor;
+}
+
+p, .header-nav, .footer-nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1rem;
+}
 

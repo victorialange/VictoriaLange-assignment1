@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -239,4 +241,44 @@ html {
   .aboutFlex .imgContainer, .aboutFlex .textContainer {
     width: 95%;
   }
+}
+/* stripping styles */
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* wrapper */
+.wrapper {
+  max-width: 1080px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* variables for background colours and text colour */
+/* General styles */
+html {
+  font-size: 125%;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: "Petit Formal Script", cursive;
+  background: #815600;
+}
+
+p, .header-nav, .footer-nav {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
 }
