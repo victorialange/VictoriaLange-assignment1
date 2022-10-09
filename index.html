@@ -16,14 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <!-- ICON links -->
-    <!-- image icon link -->
+    <!-- ICON links FONT AWESOME 4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- calendar icon link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- handshake icon link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
 <body>
     <!-- HEADER -->
@@ -45,9 +39,16 @@
                 <h1>Galass Handbags</h1>
                 <div class="imgContainer1">
                     <img src="./assets/group-bags.png" alt="">
+                    <div class="social-icon-bar">
+                        <a href="#"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+                        <a href="#"><i style="font-size:24px" class="fa">&#xf09a;</i></a>
+                        <a href="#"><i style="font-size:24px" class="fa">&#xf2ac;</i></a>
+                        <a href="#"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+                    </div>
                 </div>
             </div>
             <!-- END FLEX container for header img and h1 -->
+            
         </div>
         <!-- END WRAPPER -->
     </header>
@@ -59,7 +60,7 @@
             <div class="wrapper flexAbout">
                 <!-- IMG CONTAINER 1 -->
                 <div class="imgContainer2">
-                    <img src="./assets/square-photo_cropped.jpg" alt="">
+                    <img src="./assets/square-photo_cropped.jpg" alt="deep blue-green faux-leather tote bag">
                 </div>
                 <!-- END IMG CONTAINER 1 -->
                 <!-- TEXT CONTAINER 1 -->
@@ -80,9 +81,9 @@
                 <h2>latest collection</h2>
                 <!-- FLEX container for GALLERY section -->
                 <ul class="galleryFlex">
-                    <li><img src="./assets/gallery-photo-1.jpg" alt=""></li>
-                    <li><img src="./assets/gallery-photo-2.jpg" alt=""></li>
-                    <li><img src="./assets/gallery-photo-3.jpg" alt=""></li>
+                    <li><img src="./assets/gallery-photo-1.jpg" alt="elegant black velvet handbag with pearl strap"></li>
+                    <li><img src="./assets/gallery-photo-2.jpg" alt="brown leather shoulder bag with colourful pattern"></li>
+                    <li><img src="./assets/gallery-photo-3.jpg" alt="white leather bag with kiss lock closure"></li>
                 </ul>
                 <!-- END FLEX container for GALLERY -->
             </div>
@@ -96,15 +97,18 @@
                 <nav class="navbar2">
                     <ul class="nav2Flex">
                         <li>
-                            <i style="font-size:45px" class="fa">&#xf03e;</i>
+                            <!-- image icon for catalogue -->
+                            <a href="#"><i style="font-size:45px" class="fa">&#xf03e;</i></a>
                             <a href="#catalogue"><h3>catalogue</h3></a>
                         </li>
                         <li>
-                            <i style="font-size:45px" class="fa">&#xf073;</i>
+                            <!-- calendar icon for events -->
+                            <a href="#"><i style="font-size:45px" class="fa">&#xf073;</i></a>
                             <a href="#events"><h3>events</h3></a>
                         </li>
                         <li>
-                            <i style="font-size:45px" class="fa">&#xf2b5;</i>
+                            <!-- handshake icon for collab -->
+                            <a href="#"><i style="font-size:45px" class="fa">&#xf2b5;</i></a>
                             <a href="#collaborations"><h3>collaborations</h3></a>
                         </li>
                     </ul>
@@ -115,10 +119,10 @@
         <!-- END SECOND NAV section -->
         <!-- BLOG section -->
         <section class="blog" id="blog">
-            <!-- FLEX CONTAINER for BLOG1 -->
-            <div class="blogFlex1">
-                <!-- WRAPPER for TEXT CONTAINER 2 -->
-                <div class="wrapper">
+            <!-- WRAPPER -->
+            <div class="wrapper">
+                <!-- FLEX CONTAINER for BLOG1 -->
+                <div class="blogFlex1">
                     <!-- TEXT CONTAINER2 -->
                     <div class="textContainer2">
                         <h2>Fall Trends</h2>
@@ -126,21 +130,20 @@
                         <button>read more</button>
                     </div>
                     <!-- END TEXT CONTAINER2 -->
+                    <!-- IMG CONTAINER right photo -->
+                    <div class="imgContainerR">
+                        <img src="./assets/right-photo.jpg" alt="sleek black suede zipper clutch bag strapless">
+                    </div>
+                    <!-- END IMG CONTAINER right photo -->
                 </div>
-                <!-- END WRAPPER for TEXT CONTAINER 2 -->
-                <!-- IMG CONTAINER right photo -->
-                <div class="blogFlex1 imgContainerR">
-                    <img src="./assets/right-photo.jpg" alt="">
-                </div>
-            </div>
-            <!-- END FLEX CONTAINER BLOG1 -->
-            <!-- FLEX CONTAINER BLOG2 -->
-            <div class="blogFlex2">
-                <div class="imgContainerL">
-                    <img src="./assets/left-photo.jpg" alt="">
-                </div>
-                <!-- WRAPPER AND TEXT CONTAINER 3 -->
-                <div class="wrapper">
+                <!-- END FLEX CONTAINER BLOG1 -->
+                <!-- FLEX CONTAINER BLOG2 -->
+                <div class="blogFlex2">
+                    <!-- IMG CONTAINER left photo -->
+                    <div class="imgContainerL">
+                        <img src="./assets/left-photo.jpg" alt="orange leather foldover crossbody tote bag">
+                    </div>
+                    <!-- END IMG CONTAINER left photo -->
                     <!-- TEXT CONTAINER3 -->
                     <div class="textContainer3">
                         <h2>Vegan Leather</h2>
@@ -149,9 +152,9 @@
                     </div>
                     <!-- END TEXT CONTAINER3 -->
                 </div>
-                <!-- END WRAPPER -->
+                <!-- END FLEX CONTAINER BLOG2 -->
             </div>
-            <!-- END FLEX CONTAINER BLOG2 -->
+            <!-- END WRAPPER -->
         </section>
         <!-- END BLOG section -->
     </main>
@@ -174,10 +177,12 @@
             <form action="" method="GET">
                 <h2>Stay updated</h2>
                 <label for="subscribe">Subscribe to our newsletter to stay updated.</label>
+                <!-- FLEX container for input bar and button -->
                 <div class="formFlex">
-                    <input type="email" id="subscribe" placeholder="Your best email">
+                    <input type="email" name="subscribe" id="subscribe" placeholder="Your best email" required>
                     <button>subscribe</button>
                 </div>
+                <!-- END FLEX container -->
             </form>
             <!-- END FORM -->
             <!-- CONTACT INFO div -->
@@ -190,9 +195,12 @@
             <!-- END CONTACT INFO -->
         </div>
         <!-- END WRAPPER -->
+        <!-- COPYRIGHT -->
         <div class="copyright">
             <small>Copyright ©️ 2019 HackerYou</small>
         </div>
+        <!-- END COPYRIGHT -->
     </footer>
+    <!-- END FOOTER -->
 </body>
 </html>

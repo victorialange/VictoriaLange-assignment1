@@ -108,6 +108,7 @@ button, .copyright {
     width: 50%;
     margin-bottom: 50px;
     padding-left: 60px;
+    position: relative;
     img {
         object-fit: contain;
         width: 100%;
@@ -166,22 +167,63 @@ button, .copyright {
 .nav2Flex {
     display: flex;
     justify-content: space-evenly;
-    i {
+    li:nth-child(2) {
+        margin-left: 40px;
+    }
+        i {
         display: block;
         text-align: center;
-    }
-}
-
-.blog {
-    padding: 50px;
+        }
+    
+    
 }
 
 .blogFlex1 {
     display: flex;
-    .textContainer2, .imgContainerR {
+    .textContainer2 {
         width: 50%;
+        padding-top: 100px;
+        padding-bottom: 105px;
+        h2 {
+            padding-bottom: 35px;
+        }
+        p {
+            padding-bottom: 40px;
+        }
+    }
+    .imgContainerR {
+        position: relative;
+        width: 100%;
         img {
             width: 100%;
+            position: absolute;
+            top: 0;
+            left: 20%;
+        }
+    }
+}
+
+.blogFlex2 {
+    display: flex;
+    .imgContainerL {
+        width: 100%;
+        position: relative;
+        img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 22%;
+        }
+    }
+    .textContainer3 {
+        width: 67%;
+        padding-top: 90px;
+        padding-bottom: 100px;
+        h2 {
+            padding-bottom: 30px;
+        }
+        p {
+            padding-bottom: 30px;
         }
     }
 }
@@ -238,4 +280,17 @@ form {
 /* link shimmer */
 a:hover, a:focus, a:active {
     text-shadow: 0 0 2px $textColor;
+}
+
+/* social media icon bar header */
+.social-icon-bar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    right: -15%;
+    bottom: -5%;
+    i {
+        margin-bottom: 10px;
+    }
 }
