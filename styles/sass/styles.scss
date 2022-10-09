@@ -136,26 +136,39 @@ a:hover, a:focus, a:active {
     }
 }
 
+/* hide MENU before mobile screen width */
+.hamburger-menu {
+    display: none;
+}
+
 /* FLEX container ABOUT section for text and image */
 .flexAbout {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 100px 0 100px;
+    padding-bottom: 120px;
+    padding-top: 60px;
     /* IMG CONTAINER 2 for image in ABOUT section */
     .imgContainer2 {
         width: 35%;
         padding-top: 10px;
+        img {
+            width: 320px;
+            height: 400px;
+            object-fit: cover;
+            object-position: -62px 60px;
+        }
     }
     /* TEXT CONTAINER 1 ABOUT section */
     .textContainer1 {
         width: 100%;
         margin-left: 50px;
+        padding-top: 60px;
         h2 {
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
         p {
-            padding-bottom: 20px;
+            padding-bottom: 35px;
         }
     }
 }
@@ -167,6 +180,7 @@ a:hover, a:focus, a:active {
     h2 {
         text-align: center;
         padding-bottom: 80px;
+        text-transform: lowercase;
     }
     /* FLEX container for GALLERY images */
     .galleryFlex {

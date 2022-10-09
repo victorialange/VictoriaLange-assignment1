@@ -228,8 +228,37 @@ html {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .aboutFlex {
+/* MEDIA QUERY for MOBILE SCREEN width */
+@media (max-width: 900px) {
+  /* HEADER NAV as FLEX CONTAINER for UL and hamburger menu*/
+  .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /* hide UL in HEADER NAV, make MENU appear on same line */
+    /* MENU appears on same line as UL */
+  }
+  .header-nav .header-nav-flex {
+    visibility: hidden;
+    width: 70%;
+  }
+  .header-nav div.hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 30%;
+    margin-top: 20px;
+  }
+  div.social-icon-bar {
+    visibility: hidden;
+  }
+  div.flexAbout {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -237,9 +266,58 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 60px 0 60px;
   }
-  .aboutFlex .imgContainer, .aboutFlex .textContainer {
-    width: 95%;
+  div.flexAbout div.textContainer1 {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 50px;
+  }
+  div.flexAbout div.textContainer1 h2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  div.flexAbout div.textContainer1 button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  div.flexAbout div.imgContainer2 {
+    width: 100%;
+  }
+  div.flexAbout div.imgContainer2 img {
+    width: 100%;
+    -o-object-position: 0px -40px;
+       object-position: 0px -40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.gallery {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  section.gallery h2 {
+    padding-bottom: 50px;
+    text-transform: none;
+  }
+  section.gallery li:nth-child(2) {
+    display: none;
+  }
+  section.gallery .galleryFlex li {
+    width: 50%;
+    margin-left: 0;
+  }
+  section.gallery .galleryFlex li:nth-child(3) {
+    margin-right: 0;
   }
 }
 /* stripping styles */
@@ -411,6 +489,11 @@ a:hover, a:focus, a:active {
   margin-right: 20px;
 }
 
+/* hide MENU before mobile screen width */
+.hamburger-menu {
+  display: none;
+}
+
 /* FLEX container ABOUT section for text and image */
 .flexAbout {
   display: -webkit-box;
@@ -423,7 +506,8 @@ a:hover, a:focus, a:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 100px 0 100px;
+  padding-bottom: 120px;
+  padding-top: 60px;
   /* IMG CONTAINER 2 for image in ABOUT section */
   /* TEXT CONTAINER 1 ABOUT section */
 }
@@ -431,15 +515,24 @@ a:hover, a:focus, a:active {
   width: 35%;
   padding-top: 10px;
 }
+.flexAbout .imgContainer2 img {
+  width: 320px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -62px 60px;
+     object-position: -62px 60px;
+}
 .flexAbout .textContainer1 {
   width: 100%;
   margin-left: 50px;
+  padding-top: 60px;
 }
 .flexAbout .textContainer1 h2 {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .flexAbout .textContainer1 p {
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 }
 
 /* GALLERY section inside MAIN */
@@ -451,6 +544,7 @@ a:hover, a:focus, a:active {
 .gallery h2 {
   text-align: center;
   padding-bottom: 80px;
+  text-transform: lowercase;
 }
 .gallery .galleryFlex {
   display: -webkit-box;

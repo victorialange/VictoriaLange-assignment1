@@ -1,10 +1,72 @@
-@media (max-width: 768px) {
-    .aboutFlex {
+/* MEDIA QUERY for MOBILE SCREEN width */
+@media (max-width: 900px) {
+    /* HEADER NAV as FLEX CONTAINER for UL and hamburger menu*/
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        /* hide UL in HEADER NAV, make MENU appear on same line */
+        .header-nav-flex {
+            visibility: hidden;
+            width: 70%;
+        }
+        /* MENU appears on same line as UL */
+        div.hamburger-menu {
+            display: flex;
+            justify-content: flex-end;
+            width: 30%;
+            margin-top: 20px;
+        }
+    }
+
+    div.social-icon-bar {
+        visibility: hidden;
+    }
+    
+    div.flexAbout {
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
+        padding: 60px 0 60px;
+        div.textContainer1 {
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            h2 {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            button {
+                align-self: center;
+            }
+        }
+        div.imgContainer2 {
+            width: 100%;
+            img {
+                width: 100%;
+                object-position: 0px -40px;
+                object-fit: cover;
+            }
+        }
+    }
 
-        .imgContainer, .textContainer {
-            width: 95%;
+    section.gallery {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        h2 {
+            padding-bottom: 50px;
+            text-transform: none;
+        }
+        li:nth-child(2) {
+            display: none;
+        }
+        .galleryFlex li {
+            width: 50%;
+            margin-left: 0;
+        }
+        .galleryFlex li:nth-child(3) {
+            margin-right: 0;
         }
     }
 }
