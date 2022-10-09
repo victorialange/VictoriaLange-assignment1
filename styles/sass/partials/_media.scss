@@ -69,4 +69,23 @@
             margin-right: 0;
         }
     }
+
+    section.nav2 {
+        padding-top: 120px;
+    }
+
+    section.nav2 .nav2Flex {
+        flex-direction: column;
+        flex-wrap: wrap;
+        li {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+            li:nth-child(2) {
+                margin-left: 0px;
+            }
+        i {
+            padding-bottom: 15px;
+        }
+    }
 }

@@ -319,6 +319,27 @@ html {
   section.gallery .galleryFlex li:nth-child(3) {
     margin-right: 0;
   }
+  section.nav2 {
+    padding-top: 120px;
+  }
+  section.nav2 .nav2Flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.nav2 .nav2Flex li {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  section.nav2 .nav2Flex li:nth-child(2) {
+    margin-left: 0px;
+  }
+  section.nav2 .nav2Flex i {
+    padding-bottom: 15px;
+  }
 }
 /* stripping styles */
 h1, h2, h3, p, ul {
