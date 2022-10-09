@@ -562,7 +562,6 @@ a:hover, a:focus, a:active {
   /* NAVBAR FOOTER */
   /* FORM STYLING FOOTER */
   /* CONTACT section FOOTER */
-  /* COPYRIGHT section FOOTER */
 }
 .footerFlex .footer-nav {
   padding-top: 80px;
@@ -599,7 +598,9 @@ a:hover, a:focus, a:active {
 .footerFlex .contact-info h3 {
   padding-bottom: 15px;
 }
-.footerFlex .copyright {
+
+/* COPYRIGHT section FOOTER */
+.copyright {
   padding: 10px;
   letter-spacing: 0.2px;
   line-height: 29px;
