@@ -88,4 +88,104 @@
             padding-bottom: 15px;
         }
     }
+
+    section.blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.blogFlex1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        div.textContainer2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                text-align: center;
+            }
+            button {
+                align-self: center;
+            }
+        }
+        div.imgContainerR {
+            position: unset;
+            img {
+                position: unset;
+            }
+        }
+        
+    }
+
+    div.blogFlex2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        div.imgContainerL{
+            position: unset;
+            img {
+                position: unset;
+            }
+        }    
+        div.textContainer3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                text-align: center;
+            }
+            button {
+                align-self: center;
+            }
+        }
+    }
+
+    /* FOOTER STYLING FLEX container */
+    div.footerFlex {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        /* FOOTER NAVBAR */
+        nav.footer-nav {
+            padding-top: 0;
+            padding-bottom: 50px;
+            width: 100%;
+            /* UL as FOOTER NAVBAR FLEX container */
+            ul.footer-nav-flex {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    text-transform: capitalize;
+                    font-weight: 300;
+                }
+            }
+        }
+        /* FORM STYLING */
+        form h2 {
+            padding-bottom: 20px;
+        }
+        label {
+            font-weight: 400;
+        }
+        /* FORM FLEX container for input bar and button */
+        div.formFlex {
+            flex-direction: column;
+            flex-wrap: wrap;
+            input {
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            button {
+                align-self: center;
+            }
+        }
+        /* CONTACT div center text */
+        div.contact-info {
+            text-align: center;
+            padding-top: 50px;
+            p {
+                font-weight: 400;
+            }
+        }
+    }
 }

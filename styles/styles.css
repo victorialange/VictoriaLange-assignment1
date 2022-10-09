@@ -340,6 +340,139 @@ html {
   section.nav2 .nav2Flex i {
     padding-bottom: 15px;
   }
+  section.blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.blogFlex1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  div.blogFlex1 div.textContainer2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.blogFlex1 div.textContainer2 h2 {
+    text-align: center;
+  }
+  div.blogFlex1 div.textContainer2 button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  div.blogFlex1 div.imgContainerR {
+    position: unset;
+  }
+  div.blogFlex1 div.imgContainerR img {
+    position: unset;
+  }
+  div.blogFlex2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  div.blogFlex2 div.imgContainerL {
+    position: unset;
+  }
+  div.blogFlex2 div.imgContainerL img {
+    position: unset;
+  }
+  div.blogFlex2 div.textContainer3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.blogFlex2 div.textContainer3 h2 {
+    text-align: center;
+  }
+  div.blogFlex2 div.textContainer3 button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  /* FOOTER STYLING FLEX container */
+  div.footerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 40px;
+    /* FOOTER NAVBAR */
+    /* FORM STYLING */
+    /* FORM FLEX container for input bar and button */
+    /* CONTACT div center text */
+  }
+  div.footerFlex nav.footer-nav {
+    padding-top: 0;
+    padding-bottom: 50px;
+    width: 100%;
+    /* UL as FOOTER NAVBAR FLEX container */
+  }
+  div.footerFlex nav.footer-nav ul.footer-nav-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  div.footerFlex nav.footer-nav ul.footer-nav-flex li {
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  div.footerFlex form h2 {
+    padding-bottom: 20px;
+  }
+  div.footerFlex label {
+    font-weight: 400;
+  }
+  div.footerFlex div.formFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  div.footerFlex div.formFlex input {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  div.footerFlex div.formFlex button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  div.footerFlex div.contact-info {
+    text-align: center;
+    padding-top: 50px;
+  }
+  div.footerFlex div.contact-info p {
+    font-weight: 400;
+  }
 }
 /* stripping styles */
 h1, h2, h3, p, ul {
