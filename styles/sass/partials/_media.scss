@@ -151,10 +151,19 @@
             width: 100%;
             /* UL as FOOTER NAVBAR FLEX container */
             ul.footer-nav-flex {
-                display: flex;
-                justify-content: space-between;
+                display: none;
+                justify-content: space-around;
+                width: 0px;
                 li {
                     text-transform: capitalize;
+                    font-weight: 300;
+                }
+            }
+            /* FOOTER NAVBAR for MOBILE */
+            ul.footer-nav-mobile {
+                display: flex;
+                justify-content: space-around;
+                li {
                     font-weight: 300;
                 }
             }

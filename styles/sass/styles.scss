@@ -88,15 +88,28 @@ a:hover, a:focus, a:active {
     text-shadow: 0 0 2px $textColor;
 }
 
+/* HEADER background img */
+header {
+    background-image: url("../assets/group-bags.png");
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: center;
+    height: 800px;
+}
+
 /* FLEX h1 and header img */
 .headerFlex {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    position: relative;
+    /* POSITIONING MAIN HEADING relative to background header img */
     h1 {
         width: 50%;
-        padding-top: 175px;
-        padding-right: 50px; 
+        position: absolute;
+        top: 270px;
+        left: -100px;
+        padding-right: 20px;
     }
     /* IMG container for header img */
     .imgContainer1 {
@@ -107,15 +120,17 @@ a:hover, a:focus, a:active {
         img {
             object-fit: contain;
             width: 100%;
+            display: none;
         }
         /* social media icon bar header */
         .social-icon-bar {
             display: flex;
             flex-direction: column;
             text-align: center;
-            position: absolute;
-            right: -15%;
-            bottom: -5%;
+            position: fixed;
+            right: 60px;
+            top: 540px;
+            z-index: 1;
             i {
                 margin-bottom: 10px;
             }
@@ -128,6 +143,7 @@ a:hover, a:focus, a:active {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding-top: 10px;
     a {
         display: inline-block;
         padding-top: 15px;
@@ -281,6 +297,10 @@ a:hover, a:focus, a:active {
     .footer-nav {
         padding-top: 80px;
         width: 20%;
+        /* hide FOOTER NAVBAR for MOBILE */
+        .footer-nav-mobile {
+            display: none;
+        }
     }
     /* FORM STYLING FOOTER */
     form {
