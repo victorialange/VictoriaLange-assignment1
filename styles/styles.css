@@ -318,10 +318,13 @@ html {
   }
   div.flexAbout div.imgContainer2 img {
     width: 100%;
-    -o-object-position: 0px -40px;
-       object-position: 0px -40px;
+    -o-object-position: 0px -30px;
+       object-position: 0px -30px;
     -o-object-fit: cover;
        object-fit: cover;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   /* GALLERY section with 2 IMG instead of 3 */
   section.gallery {
@@ -783,15 +786,15 @@ header {
 }
 .flexAbout .imgContainer2 {
   width: 35%;
-  padding-top: 10px;
+  padding-top: 60px;
 }
 .flexAbout .imgContainer2 img {
-  width: 320px;
-  height: 400px;
+  width: 400px;
+  height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: -62px 60px;
-     object-position: -62px 60px;
+  -o-object-position: -20px 0;
+     object-position: -20px 0;
 }
 .flexAbout .textContainer1 {
   width: 100%;

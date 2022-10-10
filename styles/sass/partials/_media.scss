@@ -63,8 +63,9 @@
             width: 100%;
             img {
                 width: 100%;
-                object-position: 0px -40px;
+                object-position: 0px -30px;
                 object-fit: cover;
+                height: fit-content;
             }
         }
     }
