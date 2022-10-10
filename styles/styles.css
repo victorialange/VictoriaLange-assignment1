@@ -255,6 +255,22 @@ html {
     width: 30%;
     margin-top: 20px;
   }
+  #home {
+    background-position-x: -75px;
+    background-position-y: 320px;
+    background-size: contain;
+    height: 1000px;
+  }
+  div.headerFlex h1 {
+    top: 30px;
+    left: 45%;
+    text-align: right;
+    padding-right: 0;
+    font-size: 3.5rem;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
   div.social-icon-bar {
     visibility: hidden;
   }
@@ -434,8 +450,9 @@ html {
   }
   div.footerFlex nav.footer-nav ul.footer-nav-flex {
     display: none;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 0px;
   }
   div.footerFlex nav.footer-nav ul.footer-nav-flex li {
@@ -446,8 +463,9 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   div.footerFlex nav.footer-nav ul.footer-nav-mobile li {
     font-weight: 300;
@@ -481,6 +499,29 @@ html {
   }
   div.footerFlex div.contact-info p {
     font-weight: 400;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  div.headerFlex h1 {
+    left: 5%;
+    font-size: 6vmax;
+  }
+  #home {
+    height: 800px;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  div.headerFlex h1 {
+    left: 17%;
+    font-size: 7.2vmax;
+    height: 950px;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  div.headerFlex h1 {
+    left: 23%;
+    font-size: 8.5vmax;
+    height: 1600px;
   }
 }
 /* stripping styles */
