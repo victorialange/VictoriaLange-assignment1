@@ -17,13 +17,14 @@
             margin-top: 20px;
         }
     }
+    /* HEADER with id=home */
     #home {
         background-position-x: -75px;
         background-position-y: 320px;
         background-size: contain;
         height: 1000px;
     }
-
+    /* MAIN HEADING inside FLEX container HEADER */
     div.headerFlex h1 {
         top: 30px;
         left: 45%;
@@ -32,16 +33,17 @@
         font-size: 3.5rem;
         width: min-content;
     }
-
+    /* SOCIAL MEDIA ICON BAR hide */
     div.social-icon-bar {
         visibility: hidden;
     }
-    
+    /* ABOUT section */
     div.flexAbout {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         padding: 60px 0 60px;
+        /* TEXT container 1 for ABOUT */
         div.textContainer1 {
             margin-left: 0px;
             display: flex;
@@ -56,6 +58,7 @@
                 align-self: center;
             }
         }
+        /* IMG container 2 for IMG in ABOUT section */
         div.imgContainer2 {
             width: 100%;
             img {
@@ -65,7 +68,7 @@
             }
         }
     }
-
+    /* GALLERY section with 2 IMG instead of 3 */
     section.gallery {
         padding-top: 50px;
         padding-bottom: 100px;
@@ -85,71 +88,83 @@
         }
     }
 
+    /* second navbar section */
     section.nav2 {
         padding-top: 120px;
-    }
-
-    section.nav2 .nav2Flex {
-        flex-direction: column;
-        flex-wrap: wrap;
-        li {
-            text-align: center;
-            padding-bottom: 50px;
-        }
-            li:nth-child(2) {
-                margin-left: 0px;
+        /* ul as FLEX container */
+        .nav2Flex {
+            flex-direction: column;
+            flex-wrap: wrap;
+            li {
+                text-align: center;
+                padding-bottom: 50px;
             }
-        i {
-            padding-bottom: 15px;
+                li:nth-child(2) {
+                    margin-left: 0px;
+                }
+            i {
+                padding-bottom: 15px;
+            }
         }
     }
-
+    /* BLOG section */
     section.blog {
         display: flex;
         flex-direction: column;
-    }
-
-    div.blogFlex1 {
-        flex-direction: column;
-        flex-wrap: wrap;
-        div.textContainer2 {
-            width: 100%;
-            display: flex;
+        /* FLEX container for blog part 1 */
+        div.blogFlex1 {
             flex-direction: column;
-            h2 {
-                text-align: center;
+            flex-wrap: wrap;
+            background-image: none;
+            /* right IMG container instead of bg IMG */
+            div.bg1 {
+                display: unset;
+                height: fit-content;
+                margin-bottom: 30px;
+                img {
+                    width: 100%;
+                    height: fit-content;
+                }
             }
-            button {
-                align-self: center;
-            }
+            div.textContainer2 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 50px;
+                h2 {
+                    text-align: center;
+                }
+                button {
+                    align-self: center;
+                }
+            }        
         }
-        div.imgContainerR {
-            position: unset;
-            img {
-                position: unset;
-            }
-        }
-        
-    }
-
-    div.blogFlex2 {
-        flex-direction: column;
-        flex-wrap: wrap;
-        div.imgContainerL{
-            position: unset;
-            img {
-                position: unset;
-            }
-        }    
-        div.textContainer3 {
-            width: 100%;
-            display: flex;
+        /*flex container for blog part 2 */
+        div.blogFlex2 {
             flex-direction: column;
-            h2 {
-                text-align: center;
+            flex-wrap: wrap;
+            background-image: none;
+            /*left IMG container instead of bg */
+            div.bg2 {
+                display: unset;
+                height: fit-content;
+                margin-bottom: 30px;
+                img {
+                    width: 100%;
+                    height: fit-content;
+                }
             }
-            button {
-                align-self: center;
+            div.textContainer3 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 50px;
+                h2 {
+                    text-align: center;
+                }
+                button {
+                    align-self: center;
+                }
             }
         }
     }
@@ -214,7 +229,6 @@
     }
 }
 
-
 @media(min-width: 300px) and (max-width: 400px){
     div.headerFlex h1 {
         left: 5%;
@@ -223,6 +237,15 @@
     #home {
         height: 800px;
     }
+    div.textContainer1 h2,
+    div.textContainer2 h2,
+    div.textContainer3 h2,
+    section.gallery h2,
+    form h2,
+    ul.nav2Flex h3,
+    div.contact-info h3 {
+        font-size: 1.9rem;
+    }
 }
 
 @media(min-width: 400px) and (max-width: 500px) {
@@ -230,6 +253,15 @@
         left: 17%;
         font-size: 7.2vmax;
         height: 950px;
+    }
+    div.textContainer1 h2,
+    div.textContainer2 h2,
+    div.textContainer3 h2,
+    section.gallery h2,
+    form h2,
+    ul.nav2Flex h3,
+    div.contact-info h3 {
+        font-size: 2.1rem;
     }
 }
 

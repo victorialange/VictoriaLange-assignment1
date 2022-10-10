@@ -255,12 +255,14 @@ html {
     width: 30%;
     margin-top: 20px;
   }
+  /* HEADER with id=home */
   #home {
     background-position-x: -75px;
     background-position-y: 320px;
     background-size: contain;
     height: 1000px;
   }
+  /* MAIN HEADING inside FLEX container HEADER */
   div.headerFlex h1 {
     top: 30px;
     left: 45%;
@@ -271,9 +273,11 @@ html {
     width: -moz-min-content;
     width: min-content;
   }
+  /* SOCIAL MEDIA ICON BAR hide */
   div.social-icon-bar {
     visibility: hidden;
   }
+  /* ABOUT section */
   div.flexAbout {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -285,6 +289,8 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 60px 0 60px;
+    /* TEXT container 1 for ABOUT */
+    /* IMG container 2 for IMG in ABOUT section */
   }
   div.flexAbout div.textContainer1 {
     margin-left: 0px;
@@ -317,6 +323,7 @@ html {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  /* GALLERY section with 2 IMG instead of 3 */
   section.gallery {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -335,8 +342,10 @@ html {
   section.gallery .galleryFlex li:nth-child(3) {
     margin-right: 0;
   }
+  /* second navbar section */
   section.nav2 {
     padding-top: 120px;
+    /* ul as FLEX container */
   }
   section.nav2 .nav2Flex {
     -webkit-box-orient: vertical;
@@ -356,6 +365,7 @@ html {
   section.nav2 .nav2Flex i {
     padding-bottom: 15px;
   }
+  /* BLOG section */
   section.blog {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -364,16 +374,33 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /* FLEX container for blog part 1 */
+    /*flex container for blog part 2 */
   }
-  div.blogFlex1 {
+  section.blog div.blogFlex1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    background-image: none;
+    /* right IMG container instead of bg IMG */
   }
-  div.blogFlex1 div.textContainer2 {
+  section.blog div.blogFlex1 div.bg1 {
+    display: unset;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+  section.blog div.blogFlex1 div.bg1 img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  section.blog div.blogFlex1 div.textContainer2 {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -382,35 +409,39 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 50px;
   }
-  div.blogFlex1 div.textContainer2 h2 {
+  section.blog div.blogFlex1 div.textContainer2 h2 {
     text-align: center;
   }
-  div.blogFlex1 div.textContainer2 button {
+  section.blog div.blogFlex1 div.textContainer2 button {
     -ms-flex-item-align: center;
         align-self: center;
   }
-  div.blogFlex1 div.imgContainerR {
-    position: unset;
-  }
-  div.blogFlex1 div.imgContainerR img {
-    position: unset;
-  }
-  div.blogFlex2 {
+  section.blog div.blogFlex2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    background-image: none;
+    /*left IMG container instead of bg */
   }
-  div.blogFlex2 div.imgContainerL {
-    position: unset;
+  section.blog div.blogFlex2 div.bg2 {
+    display: unset;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 30px;
   }
-  div.blogFlex2 div.imgContainerL img {
-    position: unset;
+  section.blog div.blogFlex2 div.bg2 img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  div.blogFlex2 div.textContainer3 {
+  section.blog div.blogFlex2 div.textContainer3 {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -419,11 +450,12 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 50px;
   }
-  div.blogFlex2 div.textContainer3 h2 {
+  section.blog div.blogFlex2 div.textContainer3 h2 {
     text-align: center;
   }
-  div.blogFlex2 div.textContainer3 button {
+  section.blog div.blogFlex2 div.textContainer3 button {
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -509,12 +541,30 @@ html {
   #home {
     height: 800px;
   }
+  div.textContainer1 h2,
+div.textContainer2 h2,
+div.textContainer3 h2,
+section.gallery h2,
+form h2,
+ul.nav2Flex h3,
+div.contact-info h3 {
+    font-size: 1.9rem;
+  }
 }
 @media (min-width: 400px) and (max-width: 500px) {
   div.headerFlex h1 {
     left: 17%;
     font-size: 7.2vmax;
     height: 950px;
+  }
+  div.textContainer1 h2,
+div.textContainer2 h2,
+div.textContainer3 h2,
+section.gallery h2,
+form h2,
+ul.nav2Flex h3,
+div.contact-info h3 {
+    font-size: 2.1rem;
   }
 }
 @media (min-width: 480px) and (max-width: 900px) {
@@ -805,16 +855,28 @@ header {
 
 /* BLOG SECTION 1 FLEX AND POSITIONING */
 .blogFlex1 {
+  background-image: url("../assets/right-photo.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-position-y: top;
   /* TEXT CONTAINER2 for first blog text */
   /* IMG container for IMG on the right */
+  /*.imgContainerR {
+      position: relative;
+      width: 100%;
+  } */
+}
+.blogFlex1 .bg1 {
+  display: none;
 }
 .blogFlex1 .textContainer2 {
-  width: 50%;
+  width: 40%;
   padding-top: 100px;
-  padding-bottom: 105px;
+  padding-bottom: 100px;
 }
 .blogFlex1 .textContainer2 h2 {
   padding-bottom: 35px;
@@ -822,44 +884,32 @@ header {
 .blogFlex1 .textContainer2 p {
   padding-bottom: 40px;
 }
-.blogFlex1 .imgContainerR {
-  position: relative;
-  width: 100%;
-}
-.blogFlex1 .imgContainerR img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 20%;
-}
 
 /* BLOG SECTION 2 FLEX AND POSITIONING */
 .blogFlex2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* IMG container for IMG on the left */
+  background-image: url("../assets/left-photo.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-y: bottom;
   /* TEXT container for 2nd blog text */
 }
-.blogFlex2 .imgContainerL {
-  width: 100%;
-  position: relative;
+.blogFlex2 .bg2 {
+  display: none;
 }
-.blogFlex2 .imgContainerL img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 22%;
-}
-.blogFlex2 .textContainer3 {
-  width: 67%;
+.blogFlex2 div.textContainer3 {
+  width: 40%;
   padding-top: 90px;
   padding-bottom: 100px;
+  float: right;
 }
-.blogFlex2 .textContainer3 h2 {
+.blogFlex2 div.textContainer3 h2 {
   padding-bottom: 30px;
 }
-.blogFlex2 .textContainer3 p {
+.blogFlex2 div.textContainer3 p {
   padding-bottom: 30px;
 }
 
