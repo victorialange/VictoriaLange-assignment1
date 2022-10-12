@@ -1,16 +1,16 @@
 /* MEDIA QUERY for MOBILE SCREEN width */
 @media (max-width: 900px) {
     /* HEADER NAV as FLEX CONTAINER for UL and hamburger menu*/
-    .header-nav {
+    .headerNav {
         display: flex;
         justify-content: space-between;
         /* hide UL in HEADER NAV, make MENU appear on same line */
-        .header-nav-flex {
+        .headerNavFlex {
             visibility: hidden;
             width: 70%;
         }
         /* MENU appears on same line as UL */
-        div.hamburger-menu {
+        div.hamburgerMenu {
             display: flex;
             justify-content: flex-end;
             width: 30%;
@@ -34,7 +34,7 @@
         width: min-content;
     }
     /* SOCIAL MEDIA ICON BAR hide */
-    div.social-icon-bar {
+    div.socialMediaIcons {
         visibility: hidden;
     }
     /* ABOUT section */
@@ -43,8 +43,8 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 60px 0 60px;
-        /* TEXT container 1 for ABOUT */
-        div.textContainer1 {
+        /* TEXT container for ABOUT */
+        div.textContainerAbout {
             margin-left: 0px;
             display: flex;
             flex-direction: column;
@@ -58,8 +58,8 @@
                 align-self: center;
             }
         }
-        /* IMG container 2 for IMG in ABOUT section */
-        div.imgContainer2 {
+        /* IMG container for IMG in ABOUT section */
+        div.imgContainerAbout {
             width: 100%;
             img {
                 width: 100%;
@@ -89,11 +89,11 @@
         }
     }
 
-    /* second navbar section */
-    section.nav2 {
+    /* NAV transition from gallery to blo section */
+    section.navTransition {
         padding-top: 120px;
         /* ul as FLEX container */
-        .nav2Flex {
+        .navTransitionFlex {
             flex-direction: column;
             flex-wrap: wrap;
             li {
@@ -116,9 +116,8 @@
         div.blogFlex1 {
             flex-direction: column;
             flex-wrap: wrap;
-            background-image: none;
-            /* right IMG container instead of bg IMG */
-            div.bg1 {
+            /* IMG container for mobile instead of container for desktop */
+            div.imgContainerMobileR {
                 display: unset;
                 height: fit-content;
                 margin-bottom: 30px;
@@ -127,61 +126,78 @@
                     height: fit-content;
                 }
             }
-            div.textContainer2 {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                padding-top: 50px;
-                h2 {
-                    text-align: center;
-                }
-                button {
-                    align-self: center;
-                }
-            }        
+            div.imgContainerDesktopR {
+                display: none;
+            }
+            // remove padding from internal wrapper for blog text
+            div.internalWrapper {
+                width: 90%;
+                margin: 0 auto;
+                padding-right: 0;
+                padding-left: 0;
+                div.textContainerBlog1 {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 50px;
+                    h2 {
+                        text-align: center;
+                    }
+                    button {
+                        align-self: center;
+                    }
+                } 
+            }       
         }
         /*flex container for blog part 2 */
         div.blogFlex2 {
             flex-direction: column;
             flex-wrap: wrap;
-            background-image: none;
-            /*left IMG container instead of bg */
-            div.bg2 {
+            /*left IMG container */
+            div.imgContainerL {
                 display: unset;
                 height: fit-content;
                 margin-bottom: 30px;
+                width: 100%;
                 img {
                     width: 100%;
                     height: fit-content;
                 }
             }
-            div.textContainer3 {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                padding-top: 50px;
-                h2 {
-                    text-align: center;
-                }
-                button {
-                    align-self: center;
+            // internal wrapper for text container
+            div.internalWrapper {
+                width: 90%;
+                margin: 0 auto;
+                padding-right: 0;
+                padding-left: 0;
+                div.textContainerBlog2 {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    padding-top: 50px;
+                    h2 {
+                        text-align: center;
+                    }
+                    button {
+                        align-self: center;
+                    }
                 }
             }
         }
     }
-
     /* FOOTER STYLING FLEX container */
     div.footerFlex {
         flex-direction: column;
         flex-wrap: wrap;
         padding-top: 40px;
         /* FOOTER NAVBAR */
-        nav.footer-nav {
+        nav.footerNav {
             padding-top: 0;
             padding-bottom: 50px;
             width: 100%;
             /* UL as FOOTER NAVBAR FLEX container */
-            ul.footer-nav-flex {
+            ul.footerNavFlex {
                 display: none;
                 justify-content: space-between;
                 width: 0px;
@@ -191,7 +207,7 @@
                 }
             }
             /* FOOTER NAVBAR for MOBILE */
-            ul.footer-nav-mobile {
+            ul.footerNavMobile {
                 display: flex;
                 justify-content: space-between;
                 li {
@@ -220,7 +236,7 @@
             }
         }
         /* CONTACT div center text */
-        div.contact-info {
+        div.contactInfo {
             text-align: center;
             padding-top: 50px;
             p {
@@ -238,13 +254,13 @@
     #home {
         height: 800px;
     }
-    div.textContainer1 h2,
-    div.textContainer2 h2,
-    div.textContainer3 h2,
+    div.textContainerAbout h2,
+    div.textContainerBlog1 h2,
+    div.textContainerBlog2 h2,
     section.gallery h2,
     form h2,
-    ul.nav2Flex h3,
-    div.contact-info h3 {
+    ul.navTransitionFlex h3,
+    div.contactInfo h3 {
         font-size: 1.9rem;
     }
 }
@@ -255,13 +271,13 @@
         font-size: 7.2vmax;
         height: 950px;
     }
-    div.textContainer1 h2,
-    div.textContainer2 h2,
-    div.textContainer3 h2,
+    div.textContainerAbout h2,
+    div.textContainerBlog1 h2,
+    div.textContainerBlog2 h2,
     section.gallery h2,
     form h2,
-    ul.nav2Flex h3,
-    div.contact-info h3 {
+    ul.navTransitionFlex h3,
+    div.contactInfo h3 {
         font-size: 2.1rem;
     }
 }

@@ -20,98 +20,94 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- Skip Link -->
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
     <!-- HEADER -->
     <header id="home">
         <!-- WRAPPER -->
         <div class="wrapper">
             <!-- HEADER NAVBAR FLEX container for UL and MENU -->
-            <nav class="header-nav">
+            <nav class="headerNav">
                 <!-- NAVBAR for DESKTOP -->
-                <ul class="header-nav-flex">
+                <ul class="headerNavFlex">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul>
-                <!-- END NAVBAR for DESKTOP -->
+                </ul><!-- END NAVBAR for DESKTOP -->
+
                 <!-- HAMBURGER MENU for MOBILE SCREEN width -->
-                <div class="hamburger-menu">
+                <div class="hamburgerMenu">
                         <i style="font-size:48px" class="fa">&#xf0c9;</i>
-                </div>
-                <!-- END HAMBURGER MENU for MOBILE -->
-            </nav>
-            <!-- END HEADER NAVBAR -->
-            <!-- FLEX container for header img and h1 -->
+                </div><!-- END HAMBURGER MENU for MOBILE -->
+            </nav><!-- END HEADER NAVBAR -->
+
+            <!-- FLEX container for h1 and container for social media icon bar -->
             <div class="headerFlex">
                 <h1>Galass Handbags</h1>
-                <!-- IMG Container for first img  -->
-                <div class="imgContainer1">
-                    <img src="./assets/group-bags.png" alt="">
-                    <!-- SOCIAL MEDIA ICON BAR -->
-                    <div class="social-icon-bar">
-                        <!-- INSTAGRAM -->
-                        <a href="#"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
-                        <!-- FACEBOOK -->
-                        <a href="#"><i style="font-size:24px" class="fa">&#xf09a;</i></a>
-                        <!-- SNAPCHAT -->
-                        <a href="#"><i style="font-size:24px" class="fa">&#xf2ac;</i></a>
-                        <!-- TWITTER -->
-                        <a href="#"><i style="font-size:24px" class="fa">&#xf099;</i></a>
-                    </div>
-                    <!-- END SOCIAL MEDIA ICON BAR -->
-                </div>
-                <!-- END IMG CONTAINER 1 -->
-            </div>
-            <!-- END FLEX container for header img and h1 -->
-        </div>
-        <!-- END WRAPPER -->
+                
+                <!-- SOCIAL MEDIA ICON BAR -->
+                <div class="socialMediaIcons">
+                    <!-- INSTAGRAM -->
+                    <a href="#"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+                    <!-- FACEBOOK -->
+                    <a href="#"><i style="font-size:24px" class="fa">&#xf09a;</i></a>
+                    <!-- SNAPCHAT -->
+                    <a href="#"><i style="font-size:24px" class="fa">&#xf2ac;</i></a>
+                    <!-- TWITTER -->
+                    <a href="#"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+                </div><!-- END SOCIAL MEDIA ICON BAR -->
+            </div><!-- END FLEX container for h1 and container for social media icon bar -->
+        </div><!-- END WRAPPER -->
     </header>
-    <!-- END HEADER -->
+    
     <!-- MAIN -->
-    <main>
+    <main id="mainContent">
         <!-- ABOUT section -->
         <section class="about" id="about">
             <!-- WRAPPER AND FLEX container for ABOUT section -->
             <div class="wrapper flexAbout">
-                <!-- IMG CONTAINER 2 -->
-                <div class="imgContainer2">
+                <!-- IMG CONTAINER ABOUT -->
+                <div class="imgContainerAbout">
                     <img src="./assets/square-photo_cropped1.jpg" alt="deep blue-green faux-leather tote bag">
-                </div>
-                <!-- END IMG CONTAINER 2 -->
-                <!-- TEXT CONTAINER 1 -->
-                <div class="textContainer1">
+                </div><!-- END IMG CONTAINER ABOUT -->
+                <!-- TEXT CONTAINER ABOUT -->
+                <div class="textContainerAbout">
                     <h2>Hand crafted</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus cum dolore ad sapiente saepe ducimus, eius non odio hic omnis provident dicta sed similique autem id eaque nesciunt fuga ipsum aliquam est, itaque nobis. Atque ex vitae voluptatum deleniti, nobis cupiditate accusantium fugit quas accusamus excepturi temporibus quam corporis sed ducimus nulla nemo? Fuga modi magni itaque dignissimos aspernatur quasi quibusdam? Maxime, dolore? Nulla tempora deserunt neque?</p>
                     <button>read more</button>
-                </div>
-                <!-- END TEXT CONTAINER 1 -->
-            </div>
-            <!-- END WRAPPER and FLEX container -->
+                </div><!-- END TEXT CONTAINER ABOUT -->
+            </div><!-- END WRAPPER and FLEX container -->
         </section>
-        <!-- END ABOUT section -->
+        
         <!-- GALLERY section -->
         <section class="gallery" id="gallery">
             <!-- WRAPPER -->
             <div class="wrapper">
                 <h2>Latest collection</h2>
-                <!-- FLEX container for GALLERY section -->
+                <!-- UL as FLEX container for GALLERY section -->
                 <ul class="galleryFlex">
-                    <li><img src="./assets/gallery-photo-1.jpg" alt="elegant black velvet handbag with pearl strap"></li>
-                    <li><img src="./assets/gallery-photo-2.jpg" alt="brown leather shoulder bag with colourful pattern"></li>
-                    <li><img src="./assets/gallery-photo-3.jpg" alt="white leather bag with kiss lock closure"></li>
-                </ul>
-                <!-- END FLEX container for GALLERY -->
-            </div>
-            <!-- END WRAPPER -->
+                    <li>
+                        <img src="./assets/gallery-photo-1.jpg" alt="elegant black velvet handbag with pearl strap">
+                    </li>
+                    <li>
+                        <img src="./assets/gallery-photo-2.jpg" alt="brown leather shoulder bag with colourful pattern">
+                    </li>
+                    <li>
+                        <img src="./assets/gallery-photo-3.jpg" alt="white leather bag with kiss lock closure">
+                    </li>
+                </ul><!-- END FLEX container for GALLERY -->
+            </div><!-- END WRAPPER -->
         </section>
-        <!-- END GALLERY section -->
-        <!-- SECOND NAV section -->
-        <section class="nav2">
+        
+        <!-- TRANSITION NAV section -->
+        <section class="navTransition">
             <!-- WRAPPER -->
             <div class="wrapper">
                 <!-- NAV -->
-                <nav class="navbar2">
-                    <ul class="nav2Flex">
+                <nav>
+                    <!-- UL as FLEX container -->
+                    <ul class="navTransitionFlex">
                         <li>
                             <!-- image icon for catalogue -->
                             <a href="#"><i style="font-size:45px" class="fa">&#xf03e;</i></a>
@@ -128,74 +124,75 @@
                             <a href="#collaborations"><h3>collaborations</h3></a>
                         </li>
                     </ul>
-                </nav>
-                <!-- END NAV -->
-            </div>
-            <!-- END WRAPPER -->
+                </nav><!-- END NAV -->
+            </div><!-- END WRAPPER -->
         </section>
-        <!-- END SECOND NAV section -->
+        
         <!-- BLOG section -->
         <section class="blog" id="blog">
+
             <!-- FLEX CONTAINER for BLOG1 -->
             <div class="blogFlex1">
-                <div class="bg1">
-                    <img src="./assets/right-photo_cropped_mobile.jpg" alt="">
-                </div>
+                <!-- IMG container right image mobile version -->
+                <div class="imgContainerMobileR">
+                    <img src="./assets/right-photo_cropped_mobile.jpg" alt="sleek black suede zipper clutch bag strapless held by a woman">
+                </div><!-- END IMG container right image mobile -->
                 <!-- WRAPPER -->
-                <div class="wrapper">
-                    <!-- TEXT CONTAINER2 -->
-                    <div class="textContainer2">
+                <div class="internalWrapper">
+                    <!-- TEXT CONTAINER BLOG 1 -->
+                    <div class="textContainerBlog1">
                         <h2>Fall Trends</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum, laborum deleniti quam corrupti voluptatem illo debitis suscipit illum consequuntur ipsum nisi. Totam molestiae cumque autem sapiente fuga placeat, repudiandae eius possimus odio! Non, unde laborum.</p>
                         <button>read more</button>
-                    </div>
-                    <!-- END TEXT CONTAINER2 -->
-                </div>
-                <!-- END WRAPPER -->
-            </div>
-            <!-- END FLEX CONTAINER BLOG1 -->
+                    </div><!-- END TEXT CONTAINER BLOG 1 -->
+                </div><!-- END WRAPPER -->
+                <!-- IMG container for right image desktop -->
+                <div class="imgContainerDesktopR">
+                    <img src="./assets/right-photo.jpg" alt="sleek black suede zipper clutch bag strapless held by a woman">
+                </div><!-- END IMG CONTAINER for right img desktop -->
+            </div><!-- END FLEX CONTAINER BLOG1 -->
+
             <!-- FLEX CONTAINER BLOG2 -->
             <div class="blogFlex2">
-                <div class="bg2">
-                    <img src="./assets/left-photo.jpg" alt="">
-                </div>
+                <!-- IMG container for left image -->
+                <div class="imgContainerL">
+                    <img src="./assets/left-photo.jpg" alt="orange leather foldover crossbody tote bag being worn outdoors">
+                </div><!-- END IMG container for left image -->
                 <!-- WRAPPER -->
-                <div class="wrapper">
-                    <!-- TEXT CONTAINER3 -->
-                    <div class="textContainer3">
+                <div class="internalWrapper">
+                    <!-- TEXT CONTAINER 2nd BLOG section -->
+                    <div class="textContainerBlog2">
                         <h2>Vegan Leather</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum, laborum deleniti quam corrupti voluptatem illo debitis suscipit illum consequuntur ipsum nisi. Totam molestiae cumque autem sapiente fuga placeat, repudiandae eius possimus odio! Non, unde laborum.</p>
                         <button>read more</button>
-                    </div>
-                    <!-- END TEXT CONTAINER3 -->
-                </div>
-                <!-- END WRAPPER -->
-            </div>
-            <!-- END FLEX CONTAINER BLOG2 -->
+                    </div><!-- END TEXT CONTAINER BLOG 2 -->
+                </div><!-- END WRAPPER -->
+            </div><!-- END FLEX CONTAINER BLOG2 -->
         </section>
-        <!-- END BLOG section -->
     </main>
-    <!-- END MAIN -->
+    
     <!-- FOOTER -->
     <footer>
         <!-- WRAPPER AND FLEX container for FOOTER -->
         <div class="wrapper footerFlex">
             <!-- FOOTER NAVBAR -->
-            <nav class="footer-nav">
-                <ul class="footer-nav-flex">
+            <nav class="footerNav">
+                <!-- FOOTER NAV bar for desktop -->
+                <ul class="footerNavFlex">
                     <li><a href="#home">home</a></li>
                     <li><a href="#blog">blog</a></li>
                     <li><a href="#gallery">gallery</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
-                <ul class="footer-nav-mobile">
+                <!-- NAV bar for mobile version -->
+                <ul class="footerNavMobile">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-            <!-- END FOOTER NAVBAR -->
+            </nav><!-- END FOOTER NAVBAR -->
+            
             <!-- SUBSCRIBE FORM -->
             <form action="" method="GET">
                 <h2>Stay updated</h2>
@@ -204,26 +201,22 @@
                 <div class="formFlex">
                     <input type="email" name="subscribe" id="subscribe" placeholder="email adress" required>
                     <button>subscribe</button>
-                </div>
-                <!-- END FLEX container -->
+                </div><!-- END FLEX container -->
             </form>
-            <!-- END FORM -->
+
             <!-- CONTACT INFO div -->
-            <div class="contact-info" id="contact">
+            <div class="contactInfo" id="contact">
                 <h3>Contact</h3>
                 <p>info@email.com | 123 - 456 - 7890</p>
                 <p>123 some road, Toronto, ON</p>
                 <p>A5A 5A5, Canada</p>
-            </div>
-            <!-- END CONTACT INFO -->
-        </div>
-        <!-- END WRAPPER -->
+            </div><!-- END CONTACT INFO -->
+        </div><!-- END WRAPPER -->
+        
         <!-- COPYRIGHT -->
         <div class="copyright">
             <small>Copyright ©️ 2019 HackerYou</small>
-        </div>
-        <!-- END COPYRIGHT -->
+        </div><!-- END COPYRIGHT -->
     </footer>
-    <!-- END FOOTER -->
 </body>
 </html>

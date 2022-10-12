@@ -19,11 +19,11 @@ html {
     background: $mainColor;
 }
 
-p, .header-nav, .footer-nav, small {
+p, .headerNav, .footerNav, small {
     font-family: 'Roboto', sans-serif;
 }
 
-p, .header-nav {
+p, .headerNav {
     font-weight: 300;
     font-size: 1rem;
     line-height: 29px;
@@ -62,11 +62,11 @@ button {
     transition: all 0.2s ease-in;
 }
 
-.footer-nav {
+.footerNav {
     line-height: 29px;
 }
 
-.about, .nav2, footer {
+.about, .navTransition, footer {
     background: $secondColor;
 }
 
@@ -97,7 +97,7 @@ header {
     height: 800px;
 }
 
-/* FLEX h1 and header img */
+/* FLEX container h1 */
 .headerFlex {
     display: flex;
     justify-content: space-between;
@@ -111,35 +111,23 @@ header {
         left: -100px;
         padding-right: 20px;
     }
-    /* IMG container for header img */
-        .imgContainer1 {
-        width: 50%;
-        margin-bottom: 50px;
-        padding-left: 60px;
-        position: relative; 
-        img {
-            object-fit: contain;
-            width: 100%;
-            display: none;
-        }
-        /* social media icon bar header */
-        .social-icon-bar {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            position: fixed;
-            right: 60px;
-            top: 540px;
-            z-index: 1;
-            i {
-                margin-bottom: 10px;
-            }
+    /* social media icon bar header */
+    .socialMediaIcons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        right: 60px;
+        top: 540px;
+        z-index: 1;
+        i {
+            margin-bottom: 10px;
         }
     }
 }
 
 /* FLEX container for header navbar */
-.header-nav-flex {
+.headerNavFlex {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -153,7 +141,7 @@ header {
 }
 
 /* hide MENU before mobile screen width */
-.hamburger-menu {
+.hamburgerMenu {
     display: none;
 }
 
@@ -164,8 +152,8 @@ header {
     justify-content: space-between;
     padding-bottom: 120px;
     padding-top: 60px;
-    /* IMG CONTAINER 2 for image in ABOUT section */
-    .imgContainer2 {
+    /* IMG CONTAINER for image in ABOUT section */
+    .imgContainerAbout {
         width: 35%;
         padding-top: 60px;
         img {
@@ -175,8 +163,8 @@ header {
             object-position: -20px 0;
         }
     }
-    /* TEXT CONTAINER 1 ABOUT section */
-    .textContainer1 {
+    /* TEXT CONTAINER ABOUT section */
+    .textContainerAbout {
         width: 100%;
         margin-left: 50px;
         padding-top: 60px;
@@ -212,12 +200,12 @@ header {
     }
 }
 
-/* second NAV inside main section */
-.nav2 {
+/* NAV transition from gallery to blog section */
+.navTransition {
     padding-top: 50px;
     padding-bottom: 80px;
-    /* FLEX container for 2nd navbar */
-    .nav2Flex {
+    /* FLEX container for transition navbar */
+    .navTransitionFlex {
         display: flex;
         justify-content: space-evenly;
         /* only add more margin for 2nd list element */
@@ -231,62 +219,72 @@ header {
     }
 }
 
-/* BLOG SECTION 1 FLEX AND POSITIONING */
+/* BLOG SECTION 1 FLEX */
 .blogFlex1 {
-    background-image: url("../assets/right-photo.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 50%;
     display: flex;
-    background-position-y: top;
-    .bg1 {
+    // img Container right image for mobile version
+    .imgContainerMobileR {
         display: none;
     }
-    /* TEXT CONTAINER2 for first blog text */
-    .textContainer2 {
-        width: 40%;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        h2 {
-            padding-bottom: 35px;
-        }
-        p {
-            padding-bottom: 40px;
+    // internal wrapper for text
+    .internalWrapper {
+        width: 50%;
+        padding-left: 120px;
+        padding-right: 120px;
+        /* TEXT CONTAINER for first blog text */
+        .textContainerBlog1 {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            h2 {
+                padding-bottom: 35px;
+            }
+            p {
+                padding-bottom: 45px;
+            }
         }
     }
-    /* IMG container for IMG on the right */
-    /*.imgContainerR {
-        position: relative;
-        width: 100%;
-    } */
+    // img Container right image for desktop
+    .imgContainerDesktopR {
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        img {
+            width: 100%;
+        }
+    }
 }
 
-/* BLOG SECTION 2 FLEX AND POSITIONING */
+/* BLOG SECTION 2 FLEX */
 .blogFlex2 {
     display: flex;
-    background-image: url("../assets/left-photo.jpg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-y: bottom;
-    .bg2 {
-        display: none;
-    }
-    /* TEXT container for 2nd blog text */
-    div.textContainer3 {
-        width: 40%;
-        padding-top: 90px;
-        padding-bottom: 100px;
-        float: right;
-        h2 {
-            padding-bottom: 30px;
+    // img Container for left image
+    .imgContainerL {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+        img {
+            width: 100%;
         }
-        p {
-            padding-bottom: 30px;
+    }
+    
+    // internal wrapper for text
+    .internalWrapper {
+        width: 50%;
+        padding-left: 120px;
+        padding-right: 120px;
+        /* TEXT container for 2nd blog text */
+        .textContainerBlog2 {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            h2 {
+                padding-bottom: 40px;
+            }
+            p {
+                padding-bottom: 45px;
+            }
         }
     }
 }
-
 /* FOOTER STYLING FLEX */
 .footerFlex {
     display: flex;
@@ -294,11 +292,11 @@ header {
     padding-top: 80px;
     padding-bottom: 80px;
     /* NAVBAR FOOTER */
-    .footer-nav {
+    .footerNav {
         padding-top: 80px;
         width: 20%;
         /* hide FOOTER NAVBAR for MOBILE */
-        .footer-nav-mobile {
+        .footerNavMobile {
             display: none;
         }
     }
@@ -326,7 +324,7 @@ header {
         }
     }
     /* CONTACT section FOOTER */
-    .contact-info {
+    .contactInfo {
         text-align: right;
         padding-top: 40px;
         h3 {
@@ -334,7 +332,6 @@ header {
         }
     }
 }
-
 /* COPYRIGHT section FOOTER */
 .copyright {
     padding: 10px;
